@@ -1,0 +1,163 @@
+package TeamTourny;
+
+import java.util.Random;
+
+public class ATeam extends Tournament {
+	
+	String name;
+	private int numWins;
+	private int winLoss;
+	private int numSeed;
+	private int bracketWon;
+	private int roundWon;
+	
+	
+	ATeam(String name, int numWins, int winLoss, int numSeed, int bracketWon, int roundWon){
+		this.name = name;
+		this.numWins = numWins;
+		this.winLoss = winLoss;
+		this.numSeed = numSeed;
+		this.bracketWon = bracketWon;	
+		this.bracketWon = roundWon;
+		
+	}//end Constructor Declaration
+	
+	
+//Generate setter/getters for all
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getNumWins() {
+		return numWins;
+	}
+
+	public void setNumWins(int numWins) {
+		this.numWins = numWins;
+	}
+
+	public int getWinLoss() {
+		return winLoss;
+	}
+
+	public void setWinLoss(int winLoss) {
+		this.winLoss = winLoss;
+	}
+
+	public int getNumSeed() {
+		return numSeed;
+	}
+
+	public void setNumSeed(int numSeed) {
+		this.numSeed = numSeed;
+	}
+
+	public int getBracketWon() {
+		return bracketWon;
+	}
+
+	public void setBracketWon(int bracketWon) {
+		this.bracketWon = bracketWon;
+	}
+	
+	public int getRoundWon() {
+		return roundWon;
+	}
+
+	public void setRoundWon(int roundWon) {
+		this.roundWon = roundWon;
+	}
+	
+//end setters/getters
+
+	
+	
+//Class ATeam Methods
+	
+	public static int winGenerator() {
+		Random winMaker= new Random();
+		int gameResults = winMaker.nextInt(1);
+		
+		System.out.println("winGenerator 1 or 0 " + gameResults);
+		
+		return gameResults;
+	}
+	
+//	public int round1A() {
+//		int seed1 = winGenerator();
+//		if (seed1 = 1) {
+//			System.out.println(seed1 +"wins bracket A");
+//		}
+//			//seed1.round1A = 1
+//			//results =  round1A winner
+//		}
+//	}
+//	
+//	public static int dealCards() {
+//		Random rand = new Random();
+//    int newCard = rand.nextInt(10) +1;
+//    return newCard; 
+//	
+//	public void setSeed() {
+//		System.out.println("You've been seeded");
+//	}
+//	
+//	public void winner() {
+//		if (bracketWon > 1) {
+//			numWins += 1;
+//		}
+//	}
+		
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		winGenerator();
+	}//endMain
+
+}//endClass
+
+
+/*PSUEDO-CODE
+ * 
+ * 1. find the seed of each team
+ * 		1.a- use a random number generator to create outcomes of 10 games
+ * 		
+ *2. give a seed ranking to each of the 4 teams
+ *
+ *---each team has a class
+ *---each team is a subclass of the tournament superclass
+ *
+ * ---subclass team attributes
+ * 		name, wins, win/loss ratio, seed ranking, bracketWon
+ * 
+ * ---superclass tournament attributes
+ * 		number of teams(even)
+ * 		number of bracket pairs
+ * 		number of rounds to win tournament
+ * 	
+ * ----Class Team methods
+ * 		win/loss ratio = seed points
+ * 		
+ * 
+ * ---Class Tournament methods
+ * 		seed teams by rank per their win/loss ratio
+ * 
+ * 		round 1A team1 vs. team4
+ * 		round 1B team2 vs. team3
+ * 
+ * 		round 2 winnerA vs WinnerB
+ * 		
+ * 		
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */

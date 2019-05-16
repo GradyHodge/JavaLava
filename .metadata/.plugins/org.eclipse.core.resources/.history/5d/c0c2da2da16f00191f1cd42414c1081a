@@ -1,0 +1,66 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Roshambo {
+
+////1. get users name (later, used for score keeping)
+	
+	public static String getName() {
+		Scanner letsPlay = new Scanner(System.in);
+		System.out.println("Time to play Roshambo! What's your name?");
+		String userName = letsPlay.nextLine();
+		
+		System.out.println("Okay, " + userName + " Let's Rumble");
+		
+		return userName;
+	}
+////1.5 get users choice
+	
+	public static String getChoice() {
+		Scanner getWeapon = new Scanner(System.in);
+		System.out.println("Choose Yo Weapon: \n rock\n paper\n scissors\n");
+		String weaponChoice = getWeapon.nextLine();
+		
+		System.out.println("Your weapon of choice is " + weaponChoice + ", are you sure about that?  OK...");
+		
+		return weaponChoice;
+	}
+	
+////3. assign random number to a string r,p,s	
+	
+	public static String compyChoice() {
+		Random rand = new Random();
+		int compyNum = rand.nextInt(3);
+		
+		String compyWep[] = {"rock", "paper", "scissors"}
+		
+		System.out.println("Compy chose " + compyWep[compyNum]);
+		
+		return compyWep[compyNum];			
+	}
+		
+
+//4. announce computer choice
+//5. compare choices
+//6. announce winner
+
+
+	public static void main(String[] args) {
+		//String getItOn = roshamboozled();
+		String play = getChoice();
+		
+	} //main method end
+} // class end
+
+
+//PsuedoCode
+//1. get users choice
+//2. get random number
+//3. assign random number to a string r,p,s
+//4. announce computer choice
+//5. compare choices
+//6. announce winner
+//   best out of 5 wins
+//7. tally the score
+//8. best out of 5 wins round
+//9. tally rounds

@@ -1,0 +1,14 @@
+package ttsClassroom;
+
+public class MethodChanining2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		ChainNumber myNumber = new ChainNumber(1);
+		
+		myNumber.add(5).print();
+	}
+
+}

@@ -1,0 +1,103 @@
+import java.util.*;
+//check out vectors
+public class SweetBabyAce2 {
+
+	
+////   build a random card generator   /////////////////////////////////////////////////////////////
+	
+	public static int newCard() {
+		Random card = new Random();
+		int newCard = card.nextInt(10)+1;
+		System.out.println(newCard);
+		
+		return newCard;
+	}
+	
+////   user gets 2 cards   ////////////////////////////////////////////////////////////////////////
+	
+	public static int playerHand() {
+		System.out.println("Let's play 21. Your first two cards are:");
+		int playerCard1 = newCard();
+		int playerCard2 = newCard();
+		int playerSum = playerCard1 + playerCard2;
+		int bust = 21 - playerSum;
+		System.out.println("Your total points are: " + playerSum);
+		System.out.println("You are " + bust + " points from 21.");
+		
+		return playerSum;
+	}	
+////   dealer gets 2 cards   /////////////////////////////////////////////////////////////////////////	
+	public static int dealerHand() {
+		System.out.println("Dealers hand:");
+		int dealerCard1 = newCard();
+		int dealerCard2 = newCard();
+		int dealerSum = dealerCard1 + dealerCard2;
+		System.out.println("The dealers first card revealed is a " + dealerCard1);
+		
+		System.out.println("Your total points are: " + dealerSum);
+		
+		return dealerSum;
+	}	
+
+////   ??? hit or hold ???  /////////////////////////////////////////////////////////////////////////	
+
+	public static String drawCard() {
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("Would you like to draw a card, yes or no?");
+		
+		String drawCard = myObj.nextLine();
+		String userAnswer = drawCard;
+		System.out.println("You said, " + userAnswer + ", to draw a card.");
+		return userAnswer;
+	}
+	
+////   user decision logic   /////////////////////////////////////////////////////////////////////////	
+  
+	public static String userDecision() {
+		System.out.println("userAnswer =" + dealerSum);
+		//String userAnswer = new String("yes");
+		//If (userAnswer.equals("yes")){
+			//System.out.println("here's your next card");
+		}
+	
+	
+//	public static String userDecision() {
+//		if (userAnswer.equalsIgnoreCase("yes")) {
+//			int nextHand = newCard() + playersum;
+//			//System.out.println("Your next card is " + newCard());
+//			//drawCard();
+//			return nextHand;
+//		}else {
+//			System.out.println("userDecision() method works");
+//		}
+//	}
+
+	
+//2. compy gets 2 cards (1 hidden)
+//3. ask for card or hold
+//4. add up face cards for user and compy and compare
+//5. announce results	
+	
+	
+	
+	
+//////////////////////////////////////////////////////////////////////////////	
+	///       MAIN METHOD
+//////////////////////////////////////////////////////////////////////////////	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		playerHand();
+		dealerHand();
+		drawCard();
+		userDecision();
+	}//end of main method
+///////////////////////////////////////////////////////////////////////////////
+}// end of class
+
+
+//// V1- no face cards
+////1. user gets 2 cards
+////2. compy gets 2 cards (1 hidden)
+////3. ask for card or hold
+////4. add up facecards for user and compy and compare
+////5. announce results

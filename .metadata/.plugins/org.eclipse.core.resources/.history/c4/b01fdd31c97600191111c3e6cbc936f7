@@ -1,0 +1,82 @@
+package tournment;
+
+import java.util.Random;
+
+public class Tournament1 {
+	
+	private static String round1A;  //start at 0, null
+	private static String round1B;  //start at 0
+	private static String round2;   //start at 0
+	
+///////////////////    Win Generator     ////////////////////////
+
+	public static int winGenerator() {
+		Random winMaker= new Random();
+		int gameResults = winMaker.nextInt(2);
+		
+		return gameResults;
+		}
+//////////////////Round 1 Bracket A    ///////////////////////////
+
+	public static String round1A() {
+		int firstBloodA = winGenerator();
+		if (firstBloodA == 1) {
+		String round1A = "Wisconsin";//seed1
+		System.out.println(round1A + " wins bracket A,.,");
+		
+		return round1A;
+		}
+		else {
+		String round1A = "Indiana"; //seed4
+		System.out.println(round1A + " wins bracket A///");
+		
+		return round1A;
+		}
+	}
+
+//////////////////Round 1 Bracket B    ///////////////////////////
+
+
+	public static String round1B() {
+		int firstBloodB = winGenerator();
+		if (firstBloodB == 1) {
+		String round1B = "Michigan"; //seed2
+		System.out.println(round1B + " wins bracket B.");
+		
+		return round1B;
+		}
+		else {
+		String round1B = "Michigan State"; //seed3
+		System.out.println(round1B + " wins bracket B!");
+		
+		return round1B;
+		}	
+	}
+
+/////////////////   ROUND 2   //////////////////////////////////
+
+	public static String round2() {
+		int champA = winGenerator();
+		if (champA == 1) {
+		System.out.println(round1A() + " wins the Tournament"); 
+		
+		return round2;
+		}
+		else {
+		System.out.println(round1B() + " wins the Tournament!");
+		
+		return round2;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		round1A();
+		round1B();
+		round2();
+		
+	}//endMain
+
+}//endClass
+

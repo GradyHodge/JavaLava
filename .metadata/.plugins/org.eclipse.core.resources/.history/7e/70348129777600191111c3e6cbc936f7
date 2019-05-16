@@ -1,0 +1,62 @@
+package ttsClassroom;
+
+import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+class ConcatTest {
+	
+	@Test
+	public void matchMeTest() {
+		ArrayList<String> x = new ArrayList<String>();
+		x.add("Phillida");
+		x.add("King");
+		assertEquals(x, matchMeArray("Phillida"));
+	}
+	
+//////////////////////////////////////////////////////////////
+
+	
+	@Test  //Edit's JUnit example
+	public void testSum() {
+    int sum2 =13;
+	    assertEquals(sum2, addvalue(7,6));
+	}
+	
+	@Test
+	public void addition() {
+		int sum1 = 11;
+	}
+		assertEquals(sum1, theValues(10,1));
+	}
+	
+//////////////////////////////////////////////////////////////
+	
+	@Test
+	public void subtraction() {
+		assertEquals (4, subract(12, 8));
+	}
+	
+//////////////////////////////////////////////////////////////
+
+	
+	@Test
+	public void multiplication(int a) {
+		assertEquals ( 4, 4);
+	}
+	
+//////////////////////////////////////////////////////////////	
+
+	
+	@Test
+	public void test() {
+	
+	
+	
+//////////////////////////////////////////////////////////////
+
+	
+}

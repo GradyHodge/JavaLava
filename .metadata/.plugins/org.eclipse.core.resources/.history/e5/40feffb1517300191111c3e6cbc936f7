@@ -1,0 +1,18 @@
+package ttsHomeWork;
+
+public class Pokemon {
+
+	int attackPower;
+	String name;
+	
+	//make a constructor with arguments
+	Pokemon(int AttackPower, String Name) {
+		this.attackPower = AttackPower;
+		this.name = Name;
+	}
+	
+	public void goTrain() {
+		this.attackPower += 5;
+		System.out.println("your training increased your attack power to " + this.attackPower);
+	}
+}

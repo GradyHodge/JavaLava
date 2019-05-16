@@ -1,0 +1,84 @@
+import java.util.*;
+
+public class BlackJack3 {
+	
+//declare global ArrayList
+	public static ArrayList <Integer> userHandArray = new ArrayList <Integer>();
+	public static ArrayList <Integer> dealerHandArray = new ArrayList <Integer>();
+
+//// create a random card generator ////////////////////////////////////////////////////////////
+	
+	public static int newCard() {
+		Random card = new Random();
+		int newCard = card.nextInt(10)+1;
+		System.out.println("test: newCard  " + newCard);
+		return newCard;
+	}
+	
+////drawCard method  /////////////////////////////////////////////////////////////////////////	
+	public static int userDrawCard() {
+		//add a card to an array, which array? can I clarify which user/dealer array in as an argument when I call it?
+		//digitArray.add(newCard();
+		int plucked = userHandArray.add(newCard());
+		
+		return plucked;
+	}
+	public static int dealerDrawCard() {
+		int dealerDraws = dealerHandArray.add(newCard());
+	
+		return dealerDraws;
+	}
+//// user gets 2 cards /////////////////////////////////////////////////////////////////////////	
+
+	
+//// dealer gets 2 cards ///////////////////////////////////////////////////////////////////////
+	
+	
+//// userCardArray /////////////////////////////////////////////////////////////////////////////	
+	
+
+//// dealerCardArray //////////////////////////////////////////////////////////////////////////	
+
+
+//// game logic     /////////////////////////////////////////////////////////////////////////	
+
+////      /////////////////////////////////////////////////////////////////////////	
+
+	
+///////////////////////////////////////////////////////////////////////////////////////////////
+	
+//////////////////////////////////////////////////////////////////////////////////////////////	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		newCard();
+	}//end of main method
+
+}//end of class
+
+/* 1. lets play bj, your first 2 card
+ * 		global ArrayList
+ * 2. dealer recieves 2 cards, reveals 1 card
+ * 		global ArrayList
+ * 3. ? hit or stay
+ * 		scanner
+ * 		logic
+ * 4. -hit- draw another card (up to 13 times)
+ * 		modular function repeats
+ * 		if userSum over 21 print you lose, end game
+ * 		this method is included in game logic of Hit/Stay question in an if statement
+ * 5. -stay- tally cards
+ * 		this method is embedded in game logic of Hit/Stay question in an else if statement
+ * 6. dealer draws cards up to 18pts
+ * 		logic included within hold method
+ * 7. compare cards
+ * 		within stay method
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */

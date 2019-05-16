@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Tournament1Test2" project="BatCave" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="tournment.Tournament1Test2" time="0.001" displayname="Tournament1Test2" uniqueid="[engine:junit-jupiter]/[class:tournment.Tournament1Test2]">
+    <testcase name="testRound1A" classname="tournment.Tournament1Test2" time="0.001" displayname="testRound1A()" uniqueid="[engine:junit-jupiter]/[class:tournment.Tournament1Test2]/[method:testRound1A()]"/>
+  </testsuite>
+</testrun>

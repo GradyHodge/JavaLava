@@ -1,0 +1,56 @@
+package tournment;
+
+public class ATeam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+
+}
+/* PSEUDOCODE
+ * 
+ * REQUIREMENTS
+ * 	tournament four teams
+ * 	4 seeds
+ * 	First Round Matchups 1 vs 4; 2 vs 3
+ * 	Program should include menu(user input---SCANNERS) 
+ * 		loop 2 questions
+ * 			1. enter number of teams playing int
+ * 			2. enter name of team String
+ * 			3. enter seed rank  int 1-4
+ * 
+ * 1. enter # team info
+ * 2. List Teams
+ * 3. List Matchup
+ * 4. Auto-play for winners
+ * 5. post results of round one and two
+ * 
+ * ---create TEAM CLASS
+ * 		1. String name;
+ * 		2. int seedRank;
+ * 
+ * ---create methods
+ * 		-create teams, no return
+ * 		-list out teams, ?no return
+ * 		-pair the teams, and play round 1 & 2 in same method return winner
+ * 		
+ * ---things needed
+ * 		- a loop to ask question multiple times
+ * 		- randomizer to generate wins
+ * 		- scanner to take user input
+ * 		-
+ * 	
+ * 
+ * 	
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * */

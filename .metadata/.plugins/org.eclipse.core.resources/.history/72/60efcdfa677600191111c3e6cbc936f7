@@ -1,0 +1,60 @@
+package ttsClassroom;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ConcatTest {
+	
+	
+	public int add(int x, int y) {
+		
+		return x + y;
+	}
+	
+	@Test
+	public void addition() {
+		assertEquals (2, addition(1,1));
+	}
+	
+//////////////////////////////////////////////////////////////
+	
+	public int subtract(int i, int j) {
+		
+		return i - j;
+	}
+	
+	@Test
+	public void subtraction() {
+		assertEquals (4, subract(12, 8));
+	}
+	
+//////////////////////////////////////////////////////////////
+
+	
+	public int multiply(int a) {
+		return a * a;
+	}
+	
+	@Test
+	public void multiplication(int a) {
+		assertequals ( 4, 4);
+	}
+	
+	
+//////////////////////////////////////////////////////////////
+
+public String concatenate(String one, String two) {
+		
+		return one + two;
+	}
+	
+	@Test
+	public void test() {
+	
+	
+	
+//////////////////////////////////////////////////////////////
+
+	
+}

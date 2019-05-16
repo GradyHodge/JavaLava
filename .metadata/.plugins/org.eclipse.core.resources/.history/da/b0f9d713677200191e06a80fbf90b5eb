@@ -1,0 +1,23 @@
+import java.util.LinkedList;
+
+public class May9LinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LinkedList<String> richLEEST = new LinkedList <String>();
+				
+				richLEEST.add("Dr. Pepper (Pack of 36");
+				richLEEST.add("Tesla Model S");
+				richLEEST.add("Rubber Duck");
+				richLEEST.add("Headphones");
+				richLEEST.add("white/brown rice");
+				
+				richLEEST.addFirst("Mercedez S650");
+				richLEEST.addLast("Ribian R1T");
+				
+				System.out.println(richLEEST);
+		
+	}
+
+}

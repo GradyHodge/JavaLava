@@ -1,0 +1,64 @@
+import java.util.Random;
+
+public class May_7_ClassNotes {
+
+// generate 2 rand numbers (user)
+// generate 2 rand num for dealer
+// add user numbers together
+// add dealer num together
+// show card 1 from computer
+	
+	
+////  create for loop within for loop to create four of each number 2-10
+	
+	public static int loopDloop() {
+		int[] playerHand = new int[100];
+		
+		for (int x = 0; x < playerHand.length; x++) {
+			playerHand[x] = x + 1;
+		}
+		
+		int sum = 0;
+		for (int n : playerHand) {
+			sum += n;
+		}
+		
+		System.out.println("the sum of the array is: " + sum);
+			
+			
+		System.out.println("playerHand array cotains: " + playerHand[]);
+		return  sum;
+	}
+//// Create an array with room for 100 integers
+//	
+//		int[] nums = new int[100];
+//
+//// Fill it with numbers using a for-loop
+//		for (int i = 0; i < nums.length; i++) 
+//		    nums[i] = i + 1;  // +1 since we want 1-100 and not 0-99
+//
+//// Compute sum
+//		int sum = 0;
+//		for (int n : nums)
+//		    sum += n;
+//
+//// Print the result (5050)
+//		System.out.println(sum);
+//		
+//		return sum;
+//	}
+	
+	
+	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+//       MAIN METHOD
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		loopDloop();
+		
+		
+	}//END MAIN METHOD
+
+}//END CLASS

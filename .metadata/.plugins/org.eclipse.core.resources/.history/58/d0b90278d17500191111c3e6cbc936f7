@@ -1,0 +1,60 @@
+package TeamTourny;
+
+public class ATeam {
+	
+	String name;
+	int numWins;
+	int winLoss;
+	int numSeed;
+	int bracketWon;
+	
+	
+	ATeam(String name, int numWins, int winLoss, int numSeed, int bracketWon)
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*PSUEDO-CODE
+ * 
+ * 1. find the seed of each team
+ * 		1.a- use a random number generator to create outcomes of 10 games
+ * 		
+ *2. give a seed ranking to each of the 4 teams
+ *
+ *---each team has a class
+ *---each team is a subclass of the tournament superclass
+ *
+ * ---subclass team attributes
+ * 		name, wins, win/loss ratio, seed ranking, bracketWon
+ * 
+ * ---superclass tournament attributes
+ * 		number of teams(even)
+ * 		number of bracket pairs
+ * 		number of rounds to win tournament
+ * 	
+ * ----Class Team methods
+ * 		win/loss ratio = seed points
+ * 		
+ * 
+ * ---Class Tournament methods
+ * 		seed teams by rank per their win/loss ratio
+ * 
+ * 		round 1A team1 vs. team4
+ * 		round 1B team2 vs. team3
+ * 
+ * 		round 2 winnerA vs WinnerB
+ * 		
+ * 		
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+*/

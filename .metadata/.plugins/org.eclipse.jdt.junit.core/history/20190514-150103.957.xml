@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JUnitTest" project="BatCave" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="junit.JUnitTest" time="0.02" displayname="JUnitTest" uniqueid="[engine:junit-jupiter]/[class:junit.JUnitTest]">
+    <testcase name="whenAssertingArraysEquality_thenEqual" classname="junit.JUnitTest" time="0.009" displayname="whenAssertingArraysEquality_thenEqual()" uniqueid="[engine:junit-jupiter]/[class:junit.JUnitTest]/[method:whenAssertingArraysEquality_thenEqual()]"/>
+    <testcase name="test1" classname="junit.JUnitTest" time="0.011" displayname="test1()" uniqueid="[engine:junit-jupiter]/[class:junit.JUnitTest]/[method:test1()]"/>
+  </testsuite>
+</testrun>

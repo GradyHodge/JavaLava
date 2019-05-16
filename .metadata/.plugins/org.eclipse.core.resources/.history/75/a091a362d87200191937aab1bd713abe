@@ -1,0 +1,28 @@
+package ttsHomeWork;
+
+public class CreatingClassesMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//create an new instance of a CarClassHmwk = a new object, and name it.
+		//you can call the new creation below an "instance" or an "object"
+//copy name of new class into your class with the main method.
+// format: nameOfClass nameInstance = new nameOfClass();
+		CarClassHmwk bumbleBee = new CarClassHmwk();
+		
+			CarClassHmwk.id = 1234;
+			CarClassHmwk.model = Toyota;
+			CarClassHmwk.make = Prius;
+			CarClassHmwk.yearMade = 2019;
+			CarClassHmwk.transformer = true;
+			
+			System.out.println("It's " + CarClassHmwk.transformer + "This " + CarClassHmwk.make + "is a robot in disguise!");
+	}
+
+}
+
+//int id;
+//String model;
+//String make;
+//int yearMade;
+//boolean transformer;

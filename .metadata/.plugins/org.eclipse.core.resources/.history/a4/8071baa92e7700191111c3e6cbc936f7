@@ -1,0 +1,37 @@
+package tournment;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Random;
+
+import org.junit.jupiter.api.Test;
+
+class Tournament1Test {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+	
+	
+///////////////////////// winGenerator //////////////////////
+	//this method returns gameResult
+	//gameResult returns something
+			//test that it returns truthy = 
+			//assertNotNull(string1)
+	//gameResult returns a type, int
+			// test that it returns a type
+			//~assertType
+	//gameResult returns a range of 0 and 1
+			// test that it returns a range
+			//~assertRange
+	@Test
+	void test() {
+	
+		void winGenerator() {
+		assertNotNull(gameResult);
+	}
+	
+	
+
+}//end@Test

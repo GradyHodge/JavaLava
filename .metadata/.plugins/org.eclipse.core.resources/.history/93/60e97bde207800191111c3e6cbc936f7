@@ -1,0 +1,19 @@
+package bamazon;
+
+public class customer {
+
+	private String name;
+	private int funds;
+	
+	public customer(String name, int funds) {
+		this.name = name;
+		this.funds = funds;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}//endMain
+
+}//endClass

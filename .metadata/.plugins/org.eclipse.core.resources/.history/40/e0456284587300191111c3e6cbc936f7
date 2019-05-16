@@ -1,0 +1,45 @@
+package ttsHomeWork;
+
+public class Pokemon {
+	
+// old way
+	//int attackPower;
+	//String name;
+	
+	public int defensePoints;
+	public int attackPower;
+	public String name;
+	public String elemental;
+	public String enviroAdvant;
+
+
+
+	//make a constructor with arguments
+	Pokemon(String name, int attackPower, int defensePoints, String elemental, String enviroAdvant) {
+	
+		this.name = name;
+		this.attackPower = attackPower;
+		this.defensePoints = defensePoints;
+		this.elemental = elemental;
+		this.enviroAdvant = enviroAdvant;
+	}
+
+//add number of days trained as an argument to the goTrain() to multiply effect?
+	public int goTrain(int multiplier) {
+		
+		for(int i = 0; i < multiplier; i++) {
+		this.attackPower += 20;
+		}
+		System.out.println("your training increased your attack power to " + this.attackPower);
+		
+		return attackPower;
+	}
+	
+	
+
+//if arena environment matches home environment pokemon gets a bonus 50 pts to their defense.
+	public void arenaAdvantage() {
+		this.enviroAdvant += 50;
+		System.out.println("The arena environment mattches your home environment. You get a bonus " this.enviroAdvant);
+	}
+}

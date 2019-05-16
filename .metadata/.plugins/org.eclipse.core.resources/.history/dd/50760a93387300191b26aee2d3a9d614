@@ -1,0 +1,42 @@
+package ttsHomeWork;
+
+public class DragonClass {
+
+	String name;
+	int wingSpan;
+	String elemental;
+	int health;
+	int armor;
+	int attackpts;
+	int lvl;
+	
+	DragonClass(String name, int wingSpan, String elements, int armor, int attackpts, int lvl){
+		
+		this.name = name;
+		this.wingSpan = wingSpan;
+		this.elemental = elements;
+		this.health = health;
+		this.armor = armor;
+		this attackpts = attackpts;
+		this.lvl = lvl;
+	
+	}
+	
+	public void goToSchool() {
+		this.wisdom += 5;
+		System.out.println("You increased your wisdom points by " + this.wisdom );
+	}
+	
+	public String specialAttack() {
+		System.out.println("judo chop");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DragonClass draco = new DragonClass("Draco", 300, "ice", 100, 300, 25, 1;)
+	}
+
+}
+
+

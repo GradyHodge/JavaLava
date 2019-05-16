@@ -1,0 +1,9 @@
+package ttsHomeWork;
+
+public class CarClassHmwk {
+	int id;
+	String model;
+	String make;
+	int yearMade;
+	boolean transformer;
+}

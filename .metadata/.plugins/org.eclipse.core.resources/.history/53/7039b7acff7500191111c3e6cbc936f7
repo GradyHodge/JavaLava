@@ -1,0 +1,215 @@
+package TeamTourny;
+
+import java.util.*;
+
+public class ATeam extends Tournament {
+	
+	private String name;
+	private int numWins;// 4,3,2,1
+	private int winLoss;//1 placeholder
+	private int numSeed; //seed1-4 ranking
+	private int bracketWon;//?placeholder ?null?
+	private int roundWon;//placholder?
+	
+	
+	ATeam(String name, int numWins, int winLoss, int numSeed, int bracketWon, int roundWon){
+		this.name = name;
+		this.numWins = numWins;
+		this.winLoss = winLoss;
+		this.numSeed = numSeed;
+		this.bracketWon = bracketWon;	
+		this.bracketWon = roundWon;
+		
+	}//end Constructor Declaration
+	
+	
+//Generate setter/getters for all
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getNumWins() {
+		return numWins;
+	}
+
+	public void setNumWins(int numWins) {
+		this.numWins = numWins;
+	}
+
+	public int getWinLoss() {
+		return winLoss;
+	}
+
+	public void setWinLoss(int winLoss) {
+		this.winLoss = winLoss;
+	}
+
+	public int getNumSeed() {
+		return numSeed;
+	}
+
+	public void setNumSeed(int numSeed) {
+		this.numSeed = numSeed;
+	}
+
+	public int getBracketWon() {
+		return bracketWon;
+	}
+
+	public void setBracketWon(int bracketWon) {
+		this.bracketWon = bracketWon;
+	}
+	
+	public int getRoundWon() {
+		return roundWon;
+	}
+
+	public void setRoundWon(int roundWon) {
+		this.roundWon = roundWon;
+	}
+	
+//end setters/getters
+
+	
+	
+//Class ATeam Methods
+	
+//	public static void seedRanking() {
+//		String wisconsin.numSeed = seed1;
+//		String michigan.numSeed = seed2;
+//		String michState.numSeed = seed3;
+//		String indiana.numSeed = seed4;
+//	}	
+				
+				//highest number wins
+				//Rich's for/if loop or  maxNumber
+//				
+//				public static int highestRank() {
+//			//Collections.max(digitArray);
+//			//Collections.min(digitArray);
+//			int largest = 0;
+//			for (int i = 0; i < digitArray.size(); i++) {
+//				if(digitArray.get(i) > largest) {
+//					largest = digitArray.get(i);
+//		}
+
+	
+	public static int winGenerator() {
+		Random winMaker= new Random();
+		int gameResults = winMaker.nextInt(2);
+		
+		System.out.println("winGenerator 1 or 0: " + gameResults);
+		
+		return gameResults;
+	}
+	
+	public static void round1A() {
+		int firstBloodA = winGenerator();
+		System.out.println("firstBloodA: " + firstBloodA);
+//		if (firstBloodA = 1) {
+//			//int round1A = "Wisconsin";
+//			System.out.println("Wisconsin wins bracket A");
+//			
+//			//return round1A;
+//		}
+//		else {
+////			String round1A = "Indiana";
+//		System.out.println("Indiana wins bracket A");
+////			
+//			return round1A;
+		}
+//	}
+//		
+//	public String round1B() {
+//		int firstBloodB = winGenerator();
+//		if (firstBloodB = 1) {
+//			String round1B = "Michigan";
+//			System.out.println("Michigan wins bracket B");
+//			
+//			return round1B;
+//		}
+//		else {
+//			String round1B = "Indiana";
+//			System.out.println("Indiana wins bracket B");
+//			
+//			return round1B;
+//		}
+		//seed2 = 1;
+		//System.out.println(seed2+ " wins bracket A");
+	
+		//seed1.round1A = 1
+		//results =  round1A winner
+	
+	
+	
+	
+//	public void setSeed() {
+//		System.out.println("You've been seeded");
+//	}
+//	
+//	public void winner() {
+//		if (bracketWon > 1) {
+//			numWins += 1;
+//		}
+//	}
+		
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		ATeam wisconsin = new ATeam("Wisconsin", 4, 1, 1, 1,1);
+//		ATeam michigan = new ATeam("Michigan", 3, 1, 2, 1,1);
+//		ATeam michState = new ATeam("Michigan State", 2, 1, 1, 1,1);
+//		ATeam indiana = new ATeam("Indiana", 1, 1, 4, 1,1);
+		
+		winGenerator();
+		round1A();
+	}//endMain
+
+}//endClass
+
+
+/*PSUEDO-CODE
+ * 
+ * 1. find the seed of each team
+ * 		1.a- use a random number generator to create outcomes of 10 games
+ * 		
+ *2. give a seed ranking to each of the 4 teams
+ *
+ *---each team has a class
+ *---each team is a subclass of the tournament superclass
+ *
+ * ---subclass team attributes
+ * 		name, wins, win/loss ratio, seed ranking, bracketWon
+ * 
+ * ---superclass tournament attributes
+ * 		number of teams(even)
+ * 		number of bracket pairs
+ * 		number of rounds to win tournament
+ * 	
+ * ----Class Team methods
+ * 		win/loss ratio = seed points
+ * 		
+ * 
+ * ---Class Tournament methods
+ * 		seed teams by rank per their win/loss ratio
+ * 
+ * 		round 1A team1 vs. team4
+ * 		round 1B team2 vs. team3
+ * 
+ * 		round 2 winnerA vs WinnerB
+ * 		
+ * 		
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */

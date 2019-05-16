@@ -1,0 +1,24 @@
+package ttsHomeWork;
+
+public class DragonClass {
+
+	String name;
+	int wingSpan;
+	String elemental;
+	int health;
+	int armor;
+	int attakpts;
+	int lvl;
+	
+	public String specialAttack() {
+		System.out.println("judo chop");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+

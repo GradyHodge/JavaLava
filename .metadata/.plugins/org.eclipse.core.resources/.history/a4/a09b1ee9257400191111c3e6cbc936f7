@@ -1,0 +1,16 @@
+package ttsClassroom;
+
+public class MethodChaining {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		DomNumber myNumber = new DomNumber(1);
+		
+		//print out: 6 using the three class methods
+		
+		myNumber.add(5).print();
+	}
+
+}

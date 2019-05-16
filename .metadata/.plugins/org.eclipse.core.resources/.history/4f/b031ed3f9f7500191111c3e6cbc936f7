@@ -1,0 +1,187 @@
+package StoreProduct;
+
+import java.util.*;
+
+public class Product {
+	
+	private String name;
+	public String getName() {
+		
+		return this.name;
+	}
+
+	public Product setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public Product setQuantity(int quantity) {
+		this.quantity = quantity;
+		return this;
+	}
+
+	public int getSerialNum() {
+		return serialNum;
+	}
+
+	public Product setSerialNum(int serialNum) {
+		this.serialNum = serialNum;
+		return this;
+	}
+
+	public double getCost() {
+		return cost;
+	}
+
+	public Product setCost(double cost) {
+		this.cost = cost;
+		return this;
+	}
+
+	public double getSalePrice() {
+		return salePrice;
+	}
+
+	public Product setSalePrice(double salePrice) {
+		this.salePrice = salePrice;
+		return this;
+	}
+
+	public int getSellBy() {
+		return sellBy;
+	}
+
+	public Product setSellBy(int sellBy) {
+		this.sellBy = sellBy;
+		return this;
+	}
+	
+	public static double getMAX_PRICE() {
+		return MAX_PRICE;
+	}
+	
+	private int quantity;
+	private int serialNum;
+	private double cost;
+	private double salePrice;
+	private final static double MAX_PRICE = 10.00;
+	
+	Product (String name, int quantity, int serialNum, double cost, double salePrice, double MAX_PRICE) {
+		
+		this.name = name;
+		this.quantity = quantity;
+		this.serialNum = serialNum;
+		this.cost = cost;
+		this.salePrice = salePrice;
+		this.MAX_PRICE = MAX_PRICE;
+		
+	}
+	
+	public void getProductInfo() {
+		System.out.println(this.name + "product name is " + this.name);
+		System.out.println(this.quantity + "product name is " + this.quantity);
+		System.out.println("product name is " + this.serialNum);
+		System.out.println("product name is " + this.cost);
+		System.out.println("product name is " + this.salePrice);
+		System.out.println("product name is " + this.MAX_PRICE);
+	}
+	//public static expiring() {
+//      n number of items expiring within 7 calendar days
+
+	
+	//creating an interface
+	
+	
+	public Product createNewProduct() {
+		Scanner ask = new Scanner(System.in);
+		System.out.println("What' the product's name?");
+		String name = ask.nextLine();
+		
+		int quantity = ask.nextInt();
+		System.out.println("What' the product's quantity?");
+		
+		int serialNum = ask.nextInt();
+		System.out.println("What' the product's serial number?");
+		
+		double cost = ask.nextDouble();
+		System.out.println("What' the product's cost?");
+		
+		double salePrice = ask.nextDouble();
+		System.out.println("What' the product's salePrice?");
+		
+		Product product1 = new Product (name, quantity, serialNum, cost, salePrice);
+		
+		return product1;
+	}
+	
+	
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	
+
+
+	}
+
+}
+
+
+
+
+//A product should be an object created from a class. Each category should be its own type. Each product should have the base properties of:
+//
+   //name
+//
+   //quantity
+//
+   //serial number
+//
+   //cost
+//
+   //sell price
+//
+   //Other features to think about:
+//
+      //Add "sell by" dates to each product
+			//public static expiring() {}
+//         n number of items expiring within 7 calendar days
+
+     //Have it so the manager can see how many items need to be sold within the week.
+		// revenue - cost of purchase + overhead = salesTarget()
+
+
+     //List it out by product.
+		// salesTarget per product list
+//
+   //Determine how much
+//
+     //each product cost the store to purchase
+		// wholesaleCost + purchasingOverhead/ itemQuant = purchaseCost()
+
+//
+     //each product could bring in in revenue
+		//  productCost*30% - productCost 
+		//  productCost*80% - productCost
+//
+     //each product would make in profit
+//
+//Create the ability to put an item on sale, or take an item off sale. Determine the sale discount.
+//    
+     //a class method with a boolean saleOn/saleOff, and discAmt as the argument
+	// public static markDown(){
+
+// if (class.object.markDown == true) {
+//             discount(discAmt)
+//    int discAmnt = percent;
+//         salePrice - ((percent * .10) * salePrice)
+//    }
+
+
+
+

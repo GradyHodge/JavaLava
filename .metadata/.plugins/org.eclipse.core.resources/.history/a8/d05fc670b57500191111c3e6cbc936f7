@@ -1,0 +1,25 @@
+package SuperSub;
+
+public class Dragon {
+
+	int scales;
+	int firePower;
+	private final static boolean LIVE_BIRTH = false;
+	private final static boolean LACTATION = false;
+	
+	Dragon(int scales, int firePower){
+		this.scales = scales;
+		this.firePower = firePower;
+	}
+	
+	public void attackTheNorth() {
+		System.out.println("Your draggon just attacked the North!");
+		System.out.println("stamina was affected");
+		System.out.println("stamina is now" + this.stamina);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

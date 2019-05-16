@@ -1,0 +1,17 @@
+package StoreProduct;
+
+public class POSMain {
+
+	
+	Product one = new Product("tomato", 10, 5467812, 1.87, 2.99, 7);
+}
+
+public void getProductInfo() {
+	System.out.println("product name is " + this.name);
+	System.out.println("product name is " + this.quantity);
+	System.out.println("product name is " + this.sku);
+	System.out.println("product name is " + this.cost);
+	System.out.println("product name is " + this.salePrice);
+	System.out.println("product name is " + this.sellBy);
+
+}

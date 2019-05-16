@@ -1,0 +1,29 @@
+package SuperSub;
+
+public class Humanology extends Mammal{
+	
+	private int eyes;
+	private boolean coder;
+	private int energy;
+	private int metabolism;
+	private int hungerLevel;
+	private int legs;
+	
+	Humanology(int eyes, boolean coder, int energy, int metabolism, int hungerLevel, int legs){
+	
+	this.eyes = eyes;
+	this.coder = coder;
+	this.energy = energy;
+	this.metabolism = metabolism;
+	this.hungerLevel = hungerLevel;
+	this.legs = legs;
+	}
+	
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}//endMain
+
+}//endClass

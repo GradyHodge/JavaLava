@@ -1,0 +1,24 @@
+package bamazon;
+
+import java.util.ArrayList;
+import java.util.*;
+
+public class StoreFront {
+
+	static ArrayList<Item> items1 = new ArrayList<>(Arrays.asList(
+			new Item("lawnmower", 200),
+			new Item("iphone", 20),
+			new Item("dog collar", 100)
+			));
+	
+	public static Item createListItems(){
+		
+	}
+	
+	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

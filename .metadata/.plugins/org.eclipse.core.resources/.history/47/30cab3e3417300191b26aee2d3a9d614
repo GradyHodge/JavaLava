@@ -1,0 +1,12 @@
+package ttsHomeWork;
+
+public class Pokemon {
+
+	int attackPower;
+	String name;
+	
+	Pokemon(int AttackPower, String Name) {
+		this.attackPower = AttackPower;
+		this.name = Name;
+	}
+}

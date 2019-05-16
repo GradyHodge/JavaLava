@@ -1,0 +1,73 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Roshambo {
+
+////1. get users name (later, used for score keeping)
+	
+	public static String getName() {
+		Scanner letsPlay = new Scanner(System.in);
+		System.out.println("Time to play Roshambo! What's your name?");
+		String userName = letsPlay.nextLine();
+		
+		System.out.println("Okay, " + userName + " Let's Rumble");
+		
+		return userName;
+	}
+	
+	public static String getChoice() {
+		Scanner getWeapon = new Scanner(System.in);
+		System.out.println("Choose Yo Weapon: \n rock\n paper\n scissors\n");
+		String weaponChoice = getWeapon.nextLine();
+		
+		return weaponChoice;
+	}
+	
+//	public static String userChooses() {
+//		//String userDecision = letsPlay.nextLine();
+//
+//		Scanner letsPlay = new Scanner(System.in);
+//		System.out.println("Time to play Roshambo! What's your name?");
+//		
+//		String userName = letsPlay.nextLine();
+//		System.out.println("Okay, " + userName + " Let's Rumble");
+//		
+//		Scanner userChoice = new Scanner(System.in);
+//		System.out.println("Choose Yo weapon:\n rock\n paper/n scissors");
+//			//if(!== "rock" || "paper" || "scissors") {
+//				//System.out.println("Not an option, start over");
+				
+//			}
+	
+	
+//2. get random number
+//3. assign random number to a string r,p,s
+//4. announce computer choice
+//5. compare choices
+//6. announce winner
+//	public static String giveName() {
+//		System.out.println("What is yo nombre?");
+//		Scanner scanner1 = new Scanner(System.in);
+//		String name1 = scanner1.nextLine();
+//
+//		System.out.println("Hello, " + name1);
+//		return name1;
+//	}
+
+	public static void main(String[] args) {
+		//String getItOn = roshamboozled();
+		String play = getName();
+		
+	} //main method end
+} // class end
+//PsuedoCode
+//1. get users choice
+//2. get random number
+//3. assign random number to a string r,p,s
+//4. announce computer choice
+//5. compare choices
+//6. announce winner
+//   best out of 5 wins
+//7. tally the score
+//8. best out of 5 wins round
+//9. tally rounds

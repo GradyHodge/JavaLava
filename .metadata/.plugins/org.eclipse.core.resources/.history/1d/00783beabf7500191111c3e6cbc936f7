@@ -1,0 +1,35 @@
+package SuperSub;
+
+public class Mammal {
+	
+	
+	private final static boolean LIVE_BIRTH = true;
+	private final static boolean LACTATION = true;
+	private int numOfLimbs;
+	
+	Mammal(int numOfLimbs){
+		this.numOfLimbs = numOfLimbs;
+	}
+	
+public static boolean isLiveBirth() {
+		return LIVE_BIRTH;
+	}
+
+
+	public static boolean isLactation() {
+		return LACTATION;
+	}
+
+
+public void breathOxy(String x) {
+	System.out.println("All mammals breath air.");
+}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+
+}

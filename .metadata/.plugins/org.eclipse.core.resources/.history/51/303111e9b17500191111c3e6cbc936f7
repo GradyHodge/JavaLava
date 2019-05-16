@@ -1,0 +1,17 @@
+package SuperSub;
+
+public class BottleNose_Dolphin extends Dolphin {
+	
+	int noseLength;
+	
+	BottleNose_Dolphin(){
+		this.noseLength = noseLength;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BottleNose_Dolphin flipper = new BottleNose_Dolphin();
+	}
+
+}

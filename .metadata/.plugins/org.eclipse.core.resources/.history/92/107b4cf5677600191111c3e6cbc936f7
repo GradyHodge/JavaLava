@@ -1,0 +1,15 @@
+package ttsClassroom;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ConcatTest {
+
+	@Test
+	public void test() {
+		May15JunitTesting test = new May15JunitTesting() 
+		
+	}
+
+}

@@ -1,0 +1,82 @@
+package ttsClassroom;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+class ConcatTest {
+	
+	@Test
+	public void matchMeTest() {
+		ArrayList<String> x = new ArrayList<String>();
+		x.add("Phillida");
+		x.add("King");
+		assertEquals(x, matchMeArray("Phillida"));
+	}
+	
+	public ArrayList<String> matchMeArray(String name){
+		ArrayList<String> new ArrayList <String>();
+		x.add("Phillida");
+		x.add("King");
+		x.add("name"); //this line will make it not pass //remove it and it will pass
+		
+		return x;
+	}
+	
+
+//////////////////////////////////////////////////////////////
+
+	
+	public int add(int x, int y) {
+		
+		return x + y;
+	}
+	
+	@Test
+	public void addition() {
+		assertEquals (2, addition(1,1));
+	}
+	
+//////////////////////////////////////////////////////////////
+	
+	public int subtract(int i, int j) {
+		
+		return i - j;
+	}
+	
+	@Test
+	public void subtraction() {
+		assertEquals (4, subract(12, 8));
+	}
+	
+//////////////////////////////////////////////////////////////
+
+	
+	public int multiply(int a) {
+		return a * a;
+	}
+	
+	@Test
+	public void multiplication(int a) {
+		assertEquals ( 4, 4);
+	}
+	
+	
+//////////////////////////////////////////////////////////////
+
+public String concatenate(String one, String two) {
+		
+		return one + two;
+	}
+	
+	@Test
+	public void test() {
+	
+	
+	
+//////////////////////////////////////////////////////////////
+
+	
+}

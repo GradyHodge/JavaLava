@@ -1,0 +1,59 @@
+
+public class May6_classPrac {
+	
+	public static void loop() {
+		int x = 5;
+			if (x == 4) {
+				System.out.println("x is not equal to 5");
+			} else {
+				System.out.println("x IS equal to 5");
+			}		
+	}
+	
+	public static void kingKobra() {
+		for (int i = 0; i < 10; i++);
+			System.out.println("Funka Shawn");
+	}
+	
+	public static void readMe1() {
+		System.out.println("Het man, tell me something.");
+		Scanner in = new Scanner(System.in);
+		System.out.println("You just said, " + in.nextLine());
+	}
+	
+	public static int addMe1(int x, int y) {
+		int result = x + y;
+		
+		return result;
+		
+	}
+	
+	public static int subMe1(int x, int y) {
+		int result = x-y;
+		return result;
+	}
+	
+	public static int multiplyMe1 (int x, int y) {
+		int result = x * y;
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		loop();
+		kingKobra();
+		int result = addMe1(7,3);
+		System.out.println(result);
+		
+		int result2 = addMe1(result, 5);
+		System.out.println(result2);
+		
+		int subResult1 = subMe1 (6,3);
+		System.out.println(subResult1);
+		
+		int mResult = multiplyMe1 (5,5);
+		System.out.println("The multiplication results are: " + mResult);
+
+	}
+
+}

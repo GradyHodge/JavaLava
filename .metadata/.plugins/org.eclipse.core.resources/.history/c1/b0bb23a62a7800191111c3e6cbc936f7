@@ -1,0 +1,30 @@
+package bamazon;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+class bamazonTest {
+
+	@DisplayName("Test Constructor Build")
+	@Test
+	
+	void createNewCustomer() {
+		customer beyonce = customer.createNewCustomer ("beyonce", 500);
+		assertNotNull(beyonce);
+	}
+	
+	@DisplayName("test that ArrayList is not empty")
+	@Test
+	public void arrayListisNotEmpty() {
+		ArrayList<Items> items = new ArrayList<Items>();
+		
+		assertArrayEquals( , StoreFront.createList();
+		}
+		
+		ArrayList<String> items = new ArrayList
+	}
+
+}

@@ -1,0 +1,36 @@
+import java.util.Random
+import java.util.Scanner
+
+public class SweetBabyAce {
+
+	//1. user gets 2 cards
+	
+	public static int newCard() {
+		Random card = new Random();
+		int card1 = card.nextInt(10)+1;
+		return newCard;
+	}
+	
+	
+	
+	//2. compy gets 2 cards (1 hidden)
+	//3. ask for card or hold
+	//4. add up facecards for user and compy and compare
+	//5. announce results	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		newCard();
+	}
+
+}
+
+
+//V1- no face cards
+//1. user gets 2 cards
+//2. compy gets 2 cards (1 hidden)
+//3. ask for card or hold
+//4. add up facecards for user and compy and compare
+//5. announce results
+//V2- add facecards
+//V3- computer can pick more cards

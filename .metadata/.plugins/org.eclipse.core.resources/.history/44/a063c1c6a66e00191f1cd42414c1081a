@@ -1,0 +1,146 @@
+package hand_world1;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class hand_world1 {
+	
+	public static String compyChoice(Random random) {
+		int wordNumber;
+		wordNumber = random.nextInt(3) +1;
+		String computerWordChoice = "";
+
+		if (wordNumber == 1) {
+			computerWordChoice = "rock";
+		} else if (wordNumber == 2) {
+			computerWordChoice = "paper";
+		} else if (wordNumber == 3) {
+			computerWordChoice = "scissors";
+		}
+		System.out.println("\n The computer chose: ");
+		return computerWordChoice;
+	}
+	
+	public static void showMenu() {
+		System.out.println( "Select One:\n 1. rock\n2. paper\n3. scissors");
+	}
+	
+	public static String getUserChoice ( Scanner scanner) {
+		String userWordChoice;
+		
+		System.out.println( "User, please make your choice: ");
+		userWordChoice = scanner.nextLine();
+		
+		return userWordChoice;
+	}
+
+	public static void main(String[] args) {
+		
+		Random random = new Random(); 
+		Scanner scanner = new Scanner(System.in);
+		
+		showMenu();
+		System.out.println( compyChoice( random ));
+		System.out.println( getUserChoice(scanner));
+	}
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		System.out.println("better work this time");
+//		int x = 5;
+//		
+//		System.out.println("the number is " + x);
+//	
+//
+//	int rippedPants[] = new int [10];
+//		for(int i = 0; i < rippedPants.length; i++) {
+//			rippedPants[i] = i+1;
+//			System.out.println(rippedPants[i]);
+//		}
+//		
+//		String rippedPants2[]= new String[5];
+//			rippedPants2[0] = "thinktank";
+//			rippedPants2[1] = "braintrust";
+//			rippedPants2[2] = "trustFall";
+//			rippedPants2[3] = "fancySocks";
+//			rippedPants2[4] = "redBull";
+//			
+//		for(int i = 0; i < rippedPants2.length; i++) {
+//			System.out.println(String.format("%s is what we picked", rippedPants2[i]));
+//			System.out.println(rippedPants2[i]+" is what we picked");
+//		}
+//		
+//		String[] TopoChico1 = {"plain", "lime", "grapefruit", "fruitCake"};
+//			for(int i = 0; i < TopoChico1.length; i++) {
+//			System.out.println(TopoChico1[1]+" is my favorite flavor");
+//			System.out.println(String.format("%s is my favorite flavor", TopoChico1 [i]));
+//			}
+//	
+//	
+//
+//	
+//	int i = 0;
+//	while(i < 5) {
+//		System.out.println("hi");
+//		i++;
+//	}
+//
+//	int z = 1;
+//	do {
+//		System.out.println(z);
+//		z++;
+//	}
+//	while(z <= 10);
+//	}
+//niceJacket1();
+
+//myFunc44();
+//}
+//
+//	public static void myFunc44() {
+//		Scanner myObj = new Scanner(System.in);
+//		System.out.println("Enter username");
+//		
+//		String userName = myObj.nextLine();
+//		System.out.println("Username is: " + userName);
+//		
+//		Random rand = new Random();
+//		int computerChoice = rand.nextInt(3);
+//		System.out.println(computerChoice);
+//	}
+	
+//	public static void userChooses() {
+//		Scanner promptUser = new Scanner(System.in);
+//		System.out.println("Let's Rumble! Choose Yo weapon: Rock, Paper, or Scissors");
+//	
+//		String selectedMsg = promptUser.nextLine();
+//		System.out.println("You Chose, " + selectedMsg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

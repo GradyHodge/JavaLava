@@ -1,0 +1,27 @@
+package SuperSub;
+
+public class Dolphin {
+	
+	private int fins;
+	private int tricks;
+	private int speed;
+	
+	
+	Dolphin (int fins, int tricks, int speed) {
+		this.fins = fins;
+		this.tricks = tricks;
+		this.speed = speed;
+	}
+	//swim(){
+		
+	//}
+	
+	//echo_location()
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

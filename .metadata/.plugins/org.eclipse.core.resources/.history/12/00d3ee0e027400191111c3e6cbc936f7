@@ -1,0 +1,28 @@
+package ttsClassroom;
+
+public class ChainNumber {
+
+	private int DomNumber;
+	
+	ChainNumber (int initialInt) {
+		
+		number = initialNum;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public DomNumber add(int toAdd) {
+	number += toAdd;
+	
+	return this;
+}
+
+public void print() {
+	System.out.println(number);
+}

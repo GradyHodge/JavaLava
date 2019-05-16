@@ -1,0 +1,12 @@
+package StoreProduct;
+
+public class ProductMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product one = new Product("tomato", 10, 57812, 1.87, 2.99, 7);
+
+		one.getProductInfo();
+	}
+
+}

@@ -1,0 +1,19 @@
+package SuperSub;
+
+public class Mammal {
+	
+	
+	private final static boolean LIVE_BIRTH = true;
+	private final static boolean LACTATION = true;
+	
+public void breathOxy() {
+	System.out.println("All mammals breath air.");
+}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
